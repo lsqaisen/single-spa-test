@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,14 +17,27 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "single-spa": "^4.0.1",
-    "single-spa-react": "^2.8.1",
+    "css-loader": "^1.0.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.22.1",
+    "ts-loader": "^4.5.0",
     "webpack": "^4.17.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "@angular/core": "^6.1.4",
+    "@angular/router": "^6.1.4",
+    "angular": "^1.7.3",
+    "ng-zorro-antd": "^1.4.0",
+    "nprogress": "^0.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "single-spa": "^4.0.1",
+    "single-spa-angular": "^2.0.0",
+    "single-spa-react": "^2.8.1",
+    "typescript": "^3.0.1"
   }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
-import rootComponent from './app';
+import rootComponent from './router';
 
 const reactLifecycles = singleSpaReact({
     React,
     ReactDOM,
     rootComponent,
-    domElementGetter: () => document.getElementById('layout')
+    domElementGetter: () => document.getElementById('react-app')
 });
 
 export const bootstrap = [

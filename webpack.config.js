@@ -30,10 +30,22 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            }, {
+                test: /\.less$/,
+                use: ['style-loader', 'css-loader!less-loader'],
+            },
+            {
                 test: /\.(js|jsx)$/,
                 use: ['babel-loader'],
                 exclude: /node_modules/,
-            }
+            },
+            // {
+            //     test: /\.ts$/,
+            //     exclude: /node_modules/,
+            //     use: ['ts-loader'],
+            // },
         ],
     },
     optimization: {
