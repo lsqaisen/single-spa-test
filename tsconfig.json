@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "sourceMap": true,
+    "allowJs": true,
     "experimentalDecorators": true,
-    "allowJs": true
   }
 }

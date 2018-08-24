@@ -3,7 +3,7 @@ import 'babel-polyfill';
 
 declareChildApplication('layout', () => import('./layout/index.js'), () => true);
 declareChildApplication('react', () => import('./react/index.js'), pathPrefix('/react'));
-// declareChildApplication('angular', () => import('./angular/index.js'), pathPrefix('/angular'));
+declareChildApplication('angular', () => import('./angular/index.js'), pathPrefix('/angular'));
 
 start();
 

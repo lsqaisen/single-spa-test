@@ -41,11 +41,11 @@ module.exports = {
                 use: ['babel-loader'],
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.ts$/,
-            //     exclude: /node_modules/,
-            //     use: ['ts-loader'],
-            // },
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use: ['ts-loader'],
+            },
         ],
     },
     optimization: {
